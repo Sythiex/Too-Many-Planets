@@ -1,0 +1,2 @@
+## 0.1.0
+- Remove the battleship tech prerequisite on cargo_ships if Pelagos removes that technology and replaces it with automated_water_transport
