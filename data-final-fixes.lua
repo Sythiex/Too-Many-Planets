@@ -264,7 +264,7 @@ set_recipe("chain_buoy", 1, {
     }
 })
 
--- ---- Restore default Ironclad technologies ----
+-- ---- Move Ironclad tech to be comparable to tank ----
 
 upsert_technology({
     type = "technology",
