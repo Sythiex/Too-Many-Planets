@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.2
+Version: 0.2.0
 Date: 2026.02.01
+  Features:
+    - Pelagos is no longer locked behind Gleba in progression
+    - Added Fishing Dock to Pelagos progression
+  Changes:
+    - Reverted Cargo Ship tech overrides when Pelagos is installed
+    - Reverted Ironclad tech overrides when Pelagos is installed, moved behind Galleon Weaponry
+    - Moved Fishing Boat to Pelagos
   Balancing:
     - AAI Loaders now require power to function (excluding wood loaders)
   Compatibility:

@@ -77,7 +77,7 @@ util.add_tech_prereq("lighthouse", "coconut-processing-technology")
 
 -- ------------------------------ Restore default Cargo Ships recipes Pelagos overwrites ------------------------------
 
-util.set_recipe("boat", 3, {
+util.create_replacement_recipe("boat", "boat_default", 3, {
     {
         type = "item",
         name = "steel-plate",
@@ -97,7 +97,7 @@ util.set_recipe("boat", 3, {
     }
 })
 
-util.set_recipe("cargo_ship", 15, {
+util.create_replacement_recipe("cargo_ship", "cargo_ship_default", 15, {
     {
         type = "item",
         name = "steel-plate",
@@ -117,7 +117,7 @@ util.set_recipe("cargo_ship", 15, {
     }
 })
 
-util.set_recipe("oil_tanker", 15, {
+util.create_replacement_recipe("oil_tanker", "oil_tanker_no_sealant", 15, {
     {
         type = "item",
         name = "steel-plate",
