@@ -1,0 +1,83 @@
+local util = {}
+
+-- Adds prereq_name to tech_name.prerequisites (if both techs exist, and not already present)
+function util.add_tech_prereq(tech_name, prereq_name)
+    local tech = data.raw.technology[tech_name]
+    local prereq = data.raw.technology[prereq_name]
+    if not tech or not prereq then return false end
+
+    tech.prerequisites = tech.prerequisites or {}
+
+    for _, name in ipairs(tech.prerequisites) do
+        if name == prereq_name then
+            return true -- already present
+        end
+    end
+
+    table.insert(tech.prerequisites, prereq_name)
+    return true
+end
+
+-- Removes prereq_name from tech_name.prerequisites (if tech exists)
+function util.remove_tech_prereq(tech_name, prereq_name)
+    local tech = data.raw.technology[tech_name]
+    if not tech or not tech.prerequisites then return false end
+
+    local out = {}
+    local removed = false
+    for _, name in ipairs(tech.prerequisites) do
+        if name ~= prereq_name then
+            table.insert(out, name)
+        else
+            removed = true
+        end
+    end
+
+    tech.prerequisites = out
+    return removed
+end
+
+function util.unlock_recipe(recipe)
+    return {
+        type = "unlock-recipe",
+        recipe = recipe
+    }
+end
+
+function util.clear_research_trigger(name)
+    local t = data.raw.technology[name]
+    if t then t.research_trigger = nil end
+end
+
+function util.upsert_technology(proto)
+    local existing = data.raw.technology[proto.name]
+    if existing then
+        for k, v in pairs(proto) do existing[k] = v end
+    else
+        data:extend({proto})
+    end
+end
+
+function util.set_tech_unit(tech_name, count, ingredients, time)
+    local tech = data.raw.technology[tech_name]
+    if not tech then return false end
+
+    tech.unit = tech.unit or {}
+
+    tech.unit.count_formula = nil
+
+    if count ~= nil then tech.unit.count = count end
+    if ingredients ~= nil then tech.unit.ingredients = ingredients end
+    if time ~= nil then tech.unit.time = time end
+
+    return true
+end
+
+function util.set_recipe(name, energy_required, ingredients)
+    local r = data.raw.recipe[name]
+    if not r then return end
+    r.energy_required = energy_required
+    r.ingredients = ingredients
+end
+
+return util
