@@ -14,7 +14,8 @@
     "lignumis",
     "kry-inserters",
     "aai-loaders-sane",
-    "fishing-dock"
+    "fishing-dock",
+    "fishing-boat"
   ],
   "description": "WIP, small patch mod currently for private use."
 }
