@@ -1,3 +1,7 @@
+## 0.1.2
+- AAI Loaders now require power to run
+- Fix Lignumis Steam Long Hand Inserter broken recipes with More Long Inserters
+
 ## 0.1.1
 - Removed Cargo Ships: Battleship due to no multiplayer support
 

@@ -10,7 +10,10 @@
     "cargo-ships",
     "aai-vehicles-ironclad",
     "Hovercrafts",
-    "TurboBike"
+    "TurboBike",
+    "lignumis",
+    "kry-inserters",
+    "aai-loaders-sane"
   ],
   "description": "WIP, small patch mod currently for private use."
 }
