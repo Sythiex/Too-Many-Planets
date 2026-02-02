@@ -1,11 +1,12 @@
 {
   "name": "too-many-planets",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "title": "Too Many Planets",
   "author": "Sythiex",
   "factorio_version": "2.0",
   "dependencies": [
     "base >= 2.0",
+    "space-age",
     "pelagos",
     "cargo-ships",
     "aai-vehicles-ironclad",
