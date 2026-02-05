@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 2026.02.05
+  Changes:
+    - Moved Planet Discovery Arig behind Asteroid Collector (same as other starter planet discoveries)
+    - Muluna thruster fuel and oxidizer can now be unlocked at the same time
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 2026.02.02
   Minor Features:

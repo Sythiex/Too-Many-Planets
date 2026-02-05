@@ -16,7 +16,9 @@ util.set_tech_unit("copper-biter-captivity", 500, {
 }, 30)
 
 -- Add bootstrap fermentation bacteria recipe to chemical plants
-if data.raw["recipe"]["fermentation-bacteria"] then data.raw["recipe"]["fermentation-bacteria"].category = "organic-or-chemistry" end
+if data.raw["recipe"]["fermentation-bacteria"] then
+    data.raw["recipe"]["fermentation-bacteria"].category = "organic-or-chemistry"
+end
 
 -- Move fishing boat to Pelagos
 util.add_tech_prereq("fishing-boat", "planet-discovery-pelagos")
@@ -26,7 +28,7 @@ util.remove_tech_prereq("fishing-dock", "fish-breeding")
 util.remove_tech_prereq("fishing-dock", "captivity")
 util.add_tech_prereq("fishing-dock", "fishing-boat")
 util.add_tech_prereq("fishing-dock", "fermentation-bacteria-cultivation-technology")
-util.set_craft_item_trigger("fishing-dock", "fishing-boat", 1)
+util.set_tech_trigger_item("fishing-dock", "fishing-boat")
 util.set_recipe("fishing-bait-pelagos", 5, {
     {
         type = "item",
