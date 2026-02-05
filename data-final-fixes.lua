@@ -1,5 +1,5 @@
 require("patches.aai-loader-electricity")
-require("patches.arig-integration")
+require("patches.atomic-arig-integration")
 -- require("patches.battleship-integration") -- disabled due to battleship multiplayer incompatibility
 require("patches.hoverbike-integration")
 require("patches.hovercraft-integration")
