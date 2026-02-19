@@ -1,0 +1,3 @@
+- Unlock magic glass on Igrys
+- Wood loader uses steam
+- add fish to nutrients recipe under fishing boat tech

@@ -1,6 +1,5 @@
 require("patches.aai-loader-electricity")
--- require("patches.arig-fixes")
-require("patches.atomic-arig-integration")
+-- require("patches.atomic-arig-integration") -- will be switching to Atomic Arig Lite
 -- require("patches.battleship-integration") -- disabled due to battleship multiplayer incompatibility
 require("patches.hoverbike-integration")
 require("patches.hovercraft-integration")

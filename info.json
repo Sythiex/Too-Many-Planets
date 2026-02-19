@@ -1,6 +1,6 @@
 {
   "name": "too-many-planets",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "title": "Too Many Planets",
   "author": "Sythiex",
   "factorio_version": "2.0",
@@ -18,7 +18,6 @@
     "aai-loaders-sane",
     "fishing-dock",
     "fishing-boat",
-    "atomic-arig",
     "planet-muluna"
   ],
   "description": "WIP, small patch mod currently for private use."
