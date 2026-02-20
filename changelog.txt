@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2026.02.20
+  Features:
+    - All dependencies are now optional
+    - All changes can now be disabled individually in the startup settings
+  Balancing:
+    - Reduced cost of Pelagos fishing bait recipe
+  Changes:
+    - Removed unused Cargo Ships dependency
+  Compatibility:
+    - Nauvis-Pelagos space connection is preserved with Redrawn Space Connections
+---------------------------------------------------------------------------------------------------
 Version: 0.2.4
 Date: 2026.02.19
   Changes:
