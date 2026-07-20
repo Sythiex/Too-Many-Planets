@@ -31,30 +31,6 @@ data:extend({
     },
     {
         type = "bool-setting",
-        name = "tmp-pelagos-before-gleba",
-        setting_type = "startup",
-        default_value = true
-    },
-    {
-        type = "bool-setting",
-        name = "tmp-pelagos-coconut-seed-buff",
-        setting_type = "startup",
-        default_value = true
-    },
-    {
-        type = "bool-setting",
-        name = "tmp-pelagos-fishing",
-        setting_type = "startup",
-        default_value = true
-    },
-    {
-        type = "bool-setting",
-        name = "tmp-pelagos-ironclad-requires-galleon",
-        setting_type = "startup",
-        default_value = true
-    },
-    {
-        type = "bool-setting",
         name = "tmp-turbobike-hoverbike-requires-hovercraft",
         setting_type = "startup",
         default_value = true

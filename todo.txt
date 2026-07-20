@@ -1,5 +1,6 @@
 - unlock magic glass on Igrys
 - wood loader uses steam
-- add fish to nutrients recipe under fishing boat tech
 - fix recycling recipes
-- prevent dredgeworks floatation platforms and wire buoy being placeable on fulgora oil ocean without tech (and maybe pelagos floating electric pole)
+- prevent dredgeworks floatation platforms and wire buoy being placeable on fulgora oil ocean without tech
+- fix muluna diffused plastic bar
+- mark Pelagos incompatible

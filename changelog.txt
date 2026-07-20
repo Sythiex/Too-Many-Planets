@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2026.07.20
+  Changes:
+    - Removed all Planet Pelagos changes
+    - Removed optional dependencies for AAI Vehicles: Ironclad, Fishing Boat, Fishing Dock, and Planet Pelagos
+---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 2026.03.14
   Features:
