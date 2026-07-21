@@ -1,6 +1,7 @@
 require("patches.aai-loader-electricity")
 require("patches.arig-tweaks")
+require("patches.asteroid-belt-cubium-integration")
 require("patches.hovercraft-integration")
 require("patches.kry-inserters-lignumis-fix")
-require("patches.muluna-tweaks")
+require("patches.muluna-integration")
 require("patches.turbobike-integration")

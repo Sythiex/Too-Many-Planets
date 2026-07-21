@@ -1,5 +1,3 @@
-local util = require("util")
-
 if mods["aai-loaders"] and settings.startup["tmp-aai-loaders-require-electricity"].value == true then
     local LOADER_POWER = {
         ["aai-loader"] = {

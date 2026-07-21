@@ -1,6 +1,6 @@
 {
   "name": "too-many-planets",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "title": "Too Many Planets",
   "author": "Sythiex",
   "factorio_version": "2.0",
@@ -10,6 +10,8 @@
     "space-age",
     "? aai-loaders",
     "? aai-loaders-sane",
+    "? AsteroidBelt",
+    "? cubium",
     "? Hovercrafts",
     "? kry-inserters",
     "? lignumis",

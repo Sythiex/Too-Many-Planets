@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
-Date: 2026.07.20
+Date: 2026.07.21
+  Features:
+    - Asteroid Belt space discovery now requires Muluna exploration science
+    - Cubium planet discovery now requires Muluna exploration science
+    - Cubium planet discovery now requires Asteroid Belt space discovery
+    - Asteroid Belt and Cubium added as optional dependencies
+  Minor Features:
+    - Added clear errors when expected technologies or recipes are missing
   Changes:
     - Removed all Planet Pelagos changes
     - Removed optional dependencies for AAI Vehicles: Ironclad, Fishing Boat, Fishing Dock, and Planet Pelagos
