@@ -43,7 +43,19 @@ data:extend({
     },
     {
         type = "bool-setting",
+        name = "tmp-quality-plus-plus-integration",
+        setting_type = "startup",
+        default_value = true
+    },
+    {
+        type = "bool-setting",
         name = "tmp-turbobike-hoverbike-requires-hovercraft",
+        setting_type = "startup",
+        default_value = true
+    },
+    {
+        type = "bool-setting",
+        name = "tmp-vesta-main-progression",
         setting_type = "startup",
         default_value = true
     }

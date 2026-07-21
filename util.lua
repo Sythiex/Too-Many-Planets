@@ -95,6 +95,36 @@ function util.add_tech_ingredient(tech_name, ingredient_name, amount)
     return true
 end
 
+-- Removes ingredient_name from tech_name.unit.ingredients
+function util.remove_tech_ingredient(tech_name, ingredient_name)
+    local operation = ("remove science pack '%s' from technology '%s'"):format(ingredient_name, tech_name)
+    local tech = require_technology(tech_name, "target", operation)
+    require_science_pack(ingredient_name, operation)
+
+    if not tech.unit then
+        local message = ("Too Many Planets: cannot %s: target technology '%s' does not have a research unit"):format(operation, tech_name)
+        error(message, 2)
+    end
+
+    if not tech.unit.ingredients then
+        return false
+    end
+
+    local out = {}
+    local removed = false
+
+    for _, ingredient in ipairs(tech.unit.ingredients) do
+        if (ingredient.name or ingredient[1]) ~= ingredient_name then
+            table.insert(out, ingredient)
+        else
+            removed = true
+        end
+    end
+
+    tech.unit.ingredients = out
+    return removed
+end
+
 function util.unlock_recipe(recipe)
     return {
         type = "unlock-recipe",

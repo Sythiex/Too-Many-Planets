@@ -2,10 +2,12 @@
 Version: 0.4.0
 Date: 2026.07.21
   Features:
+    - Asteroid Belt, Cubium, Outer Rim, Paracelsin, Quality, Quality++ | Extended Qualities, Secretas&Frozeta, and Vesta added as optional dependencies
     - Asteroid Belt space discovery now requires Muluna exploration science
     - Cubium planet discovery now requires Muluna exploration science
     - Cubium planet discovery now requires Asteroid Belt space discovery
-    - Asteroid Belt and Cubium added as optional dependencies
+    - Quality++ | Extended Qualities additional quality tiers integrated into planet progression. Paracelsin unlocks Legendary, Aquilo unlocks Mythical, Secretas&Frozeta unlocks Masterwork, Vesta unlocks Wondrous, Shattered Planet unlocks Artifactual.
+    - Vesta gas manipulation science is now required for Promethium science
   Minor Features:
     - Added clear errors when expected technologies or recipes are missing
   Changes:
