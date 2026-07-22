@@ -1,4 +1,5 @@
 local util = {}
+local quality_recycling
 
 local function require_technology(name, role, operation)
     local tech = data.raw.technology[name]
@@ -216,6 +217,17 @@ function util.set_recipe_result(recipe_name, result_name, amount, result_type)
     recipe.result_count = nil
     recipe.results = {table.deepcopy(new_result)}
     return
+end
+
+function util.regenerate_recycling_recipe(name)
+    if not mods["quality"] then
+        return
+    end
+
+    local operation = ("regenerate recycling recipe for '%s'"):format(name)
+    local recipe = require_recipe(name, operation)
+    quality_recycling = quality_recycling or require("__quality__.prototypes.recycling")
+    quality_recycling.generate_recycling_recipe(recipe)
 end
 
 -- Hide + disable a recipe so it won't show up / be craftable by players

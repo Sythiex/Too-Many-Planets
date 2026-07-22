@@ -31,6 +31,7 @@ if mods["Hovercrafts"] and settings.startup["tmp-hovercrafts-recipe-changes"].va
             amount = 2
         }
     })
+    util.regenerate_recycling_recipe("hovercraft")
 
     util.set_recipe("missile-hovercraft", 4, {
         {
@@ -51,4 +52,5 @@ if mods["Hovercrafts"] and settings.startup["tmp-hovercrafts-recipe-changes"].va
             amount = 1
         }
     })
+    util.regenerate_recycling_recipe("missile-hovercraft")
 end

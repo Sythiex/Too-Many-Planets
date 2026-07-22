@@ -1,6 +1,5 @@
 - unlock magic glass on Igrys
 - wood loader uses steam
-- fix recycling recipes
 - prevent dredgeworks floatation platforms and wire buoy being placeable on fulgora oil ocean without tech
 - fix muluna diffused plastic bar
 - mark Pelagos incompatible

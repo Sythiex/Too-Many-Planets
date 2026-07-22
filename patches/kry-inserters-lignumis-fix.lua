@@ -13,6 +13,7 @@ if mods["kry-inserters"] and mods["lignumis"] and settings.startup["tmp-more-lon
             amount = 2
         }
     })
+    util.regenerate_recycling_recipe("steam-long-handed-inserter")
 
     util.set_recipe("steam-long-handed-inserter-iron", 0.5, {
         {
@@ -25,4 +26,5 @@ if mods["kry-inserters"] and mods["lignumis"] and settings.startup["tmp-more-lon
             amount = 2
         }
     })
+    util.regenerate_recycling_recipe("steam-long-handed-inserter-iron")
 end
